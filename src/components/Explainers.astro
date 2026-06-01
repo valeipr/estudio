@@ -1,0 +1,68 @@
+---
+const videos = [
+  {
+    id: '7551093244621311238',
+    cite: 'https://www.tiktok.com/@labtecnosocial/video/7551093244621311238',
+    text: '🇧🇴 🗳 Entre mayo y agosto de este año mapeamos diferentes actos de campaña de los partidos políticos en las ciudades.',
+    author: '@labtecnosocial',
+  },
+  {
+    id: '7565155450405063948',
+    cite: 'https://www.tiktok.com/@labtecnosocial/video/7565155450405063948',
+    text: '🗳🇧🇴 Elaboramos mapas con escala continua para observar el margen de victoria en la segunda vuelta.',
+    author: '@labtecnosocial',
+  },
+  {
+    id: '7600918335840161044',
+    cite: 'https://www.tiktok.com/@labtecnosocial/video/7600918335840161044',
+    text: '☝️ Analizamos más de 6000 tweets sobre el #RayoEvolizador y cómo se genera opinión pública en redes sociales.',
+    author: '@labtecnosocial',
+  },
+];
+---
+
+<section class="relative bg-blue-50 overflow-hidden py-6 md:py-10">
+  <div class="absolute inset-0 dot-pattern pointer-events-none" aria-hidden="true"></div>
+
+  <div class="relative z-10 max-w-[1200px] mx-auto px-4 md:px-6">
+
+    <!-- Encabezado -->
+    <div data-animate class="flex items-center justify-center gap-3 md:gap-5 py-8 md:py-10">
+      <img src="/icons/foquito.png" alt="" aria-hidden="true"
+        class="w-8 h-8 md:w-[38px] md:h-[38px] object-contain shrink-0" />
+      <h2 class="font-heading text-type-27 md:text-type-48 text-grey-800 leading-[0.8]">
+        Algunos explainers con datos
+      </h2>
+    </div>
+
+    <!-- Embeds: scroll horizontal en móvil, centrado en desktop -->
+    <div class="flex gap-5 pb-8 md:pb-10
+                overflow-x-auto md:overflow-x-visible
+                md:justify-center
+                snap-x snap-mandatory md:snap-none
+                -mx-4 px-4 md:mx-0 md:px-0">
+      {videos.map((v, i) => (
+        <div data-animate style={`--anim-delay:${i * 120}ms`}
+             class="shrink-0 snap-center w-[min(340px,82vw)] md:w-[320px]">
+          <blockquote
+            class="tiktok-embed"
+            cite={v.cite}
+            data-video-id={v.id}
+            style="max-width:340px;min-width:280px;"
+          >
+            <section>
+              <a target="_blank" title={v.author}
+                 href={`https://www.tiktok.com/@labtecnosocial?refer=embed`}>
+                {v.author}
+              </a>
+              {v.text}
+            </section>
+          </blockquote>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+<script async src="https://www.tiktok.com/embed.js"></script>

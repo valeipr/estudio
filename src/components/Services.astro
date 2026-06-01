@@ -1,0 +1,62 @@
+---
+const services = [
+  {
+    icon: '/icons/ux.png',
+    alt: 'Diseño UX',
+    title: 'Diseñar herramientas digitales para proyectos sociales',
+    description: 'Apps móviles, plataformas web, y experiencias digitales centradas en las personas.',
+  },
+  {
+    icon: '/icons/mapas.png',
+    alt: 'Visualización de datos',
+    title: 'Transformar datos y convertirlos en conocimiento útil',
+    description: 'Visualizaciones, dashboards, mapas interactivos y análisis exploratorios.',
+  },
+  {
+    icon: '/icons/enseniar.png',
+    alt: 'Comunicación',
+    title: 'Comunicar temas complejos',
+    description: 'Narrativas visuales, reportajes interactivos, contenidos educativos y periodismo de datos.',
+  },
+  {
+    icon: '/icons/investigar.png',
+    alt: 'Investigación',
+    title: 'Comprender mejor a los usuarios y la sociedad',
+    description: 'Investigación cualitativa, entrevistas, observación, UX Research y análisis de necesidades.',
+  },
+];
+---
+
+<section id="servicios" class="relative bg-blue-50 overflow-hidden py-6 md:py-10">
+  <div class="absolute inset-0 dot-pattern pointer-events-none" aria-hidden="true"></div>
+
+  <div class="relative z-10 max-w-[1200px] mx-auto px-4 md:px-6">
+
+    <!-- Encabezado -->
+    <div data-animate class="flex items-center justify-center gap-3 md:gap-5 py-8 md:py-10">
+      <img src="/icons/problemas.png" alt="" aria-hidden="true"
+        class="w-10 h-10 md:w-[74px] md:h-[74px] object-contain shrink-0" />
+      <h2 class="font-heading text-type-36 md:text-type-48 text-grey-800 leading-[0.8]">
+        Puedo ayudarte a:
+      </h2>
+    </div>
+
+    <!-- Grid de tarjetas -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pb-8 md:pb-10">
+      {services.map((s, i) => (
+        <div data-animate style={`--anim-delay:${i * 100}ms`}
+             class="bg-cards-bg border border-green-300 rounded-xl flex flex-col items-center gap-6 px-4 py-8
+                    hover:-translate-y-2 hover:shadow-[0_12px_28px_rgba(0,0,0,0.1)] hover:border-green-600 hover:bg-green-100 cursor-pointer">
+          <div class="bg-green-100 rounded-full size-[115px] flex items-center justify-center shrink-0">
+            <img src={s.icon} alt={s.alt} class="w-[76px] h-[76px] object-contain" />
+          </div>
+          <div class="flex flex-col items-center gap-4 text-center w-full">
+            <p class="font-body font-bold text-type-21 text-teal-900 leading-[1.2]">{s.title}</p>
+            <p class="font-body text-type-16 text-grey-500 leading-[1.4]">{s.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

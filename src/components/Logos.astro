@@ -1,0 +1,27 @@
+---
+const logos = [
+  { src: 'https://www.figma.com/api/mcp/asset/56db988a-423f-4c14-8092-ca8869c1e3dd', alt: 'Lab. Tecnologías Sociales', width: 140, height: 69 },
+  { src: 'https://www.figma.com/api/mcp/asset/defbfddf-2b32-4fe1-b92d-e9e9994aeaf2', alt: 'Logo organización 2', width: 93, height: 93 },
+  { src: 'https://www.figma.com/api/mcp/asset/ee68c8a1-1d64-4de4-908a-ddabc58cd58d', alt: 'Acceso', width: 224, height: 71 },
+  { src: 'https://www.figma.com/api/mcp/asset/d0968e98-04d7-4786-bae5-4396ca6cba33', alt: 'PADEM', width: 173, height: 78 },
+  { src: 'https://www.figma.com/api/mcp/asset/9c83b122-39b2-4423-912a-25182f1a8956', alt: 'Solidar Suisse', width: 171, height: 74 },
+];
+---
+
+<section class="relative bg-blue-50 overflow-hidden py-10 md:py-[75px]">
+  <div class="absolute inset-0 dot-pattern pointer-events-none" aria-hidden="true"></div>
+
+  <div class="relative z-10 flex flex-col items-center gap-6 max-w-[1000px] mx-auto px-4 md:px-10">
+    <p data-animate class="font-body text-type-16 text-grey-500 text-center">
+      He colaborado con:
+    </p>
+    <div class="flex items-center justify-center gap-6 md:gap-10 flex-wrap">
+      {logos.map((logo, i) => (
+        <img data-animate="fade-in" style={`--anim-delay:${i * 80}ms`}
+             src={logo.src} alt={logo.alt}
+             width={logo.width} height={logo.height}
+             class="object-contain max-h-[60px] md:max-h-none" />
+      ))}
+    </div>
+  </div>
+</section>
