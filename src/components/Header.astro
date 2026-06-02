@@ -1,7 +1,7 @@
 ---
 ---
 <header class="sticky top-0 z-50 bg-blue-50 border-b border-grey-100">
-  <div class="flex items-center justify-between h-[65px] max-w-[1000px] mx-auto px-4 md:px-6">
+  <div class="flex items-center justify-between h-[65px] max-w-[1200px] mx-auto px-4 md:px-10">
 
     <!-- Logo -->
     <a href="/" class="flex items-center gap-2 no-underline shrink-0">
@@ -13,22 +13,103 @@
 
     <!-- Nav desktop -->
     <nav class="hidden md:block">
-      <ul class="flex items-center gap-6 lg:gap-10 list-none font-body text-type-16 text-grey-500">
-        <li><a href="#servicios" class="hover:text-green-600 transition-colors">¿Qué hago?</a></li>
-        <li><a href="#proyectos" class="hover:text-green-600 transition-colors">Proyectos</a></li>
-        <li><a href="#sobre-mi" class="hover:text-green-600 transition-colors">Sobre mí</a></li>
+      <ul class="flex items-center gap-4 lg:gap-7 list-none font-body text-type-16 text-grey-500">
+        <li><a href="/#servicios" class="hover:text-green-600 transition-colors">¿Qué hago?</a></li>
+        <li><a href="/#proyectos" class="hover:text-green-600 transition-colors">Proyectos</a></li>
+        <li><a href="/#explainers" class="hover:text-green-600 transition-colors">Explainers</a></li>
+        <li><a href="/#investigaciones" class="hover:text-green-600 transition-colors">Investigaciones</a></li>
+        <li><a href="/#sobre-mi" class="hover:text-green-600 transition-colors">Sobre mí</a></li>
         <li>
-          <a href="#contacto" class="bg-green-600 text-white font-heading text-type-20 px-3 py-1.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline leading-none">
+          <a href="/#contacto" class="bg-green-600 text-white font-heading text-type-20 px-3 py-1.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline leading-none">
             Contáctame
           </a>
         </li>
       </ul>
     </nav>
 
-    <!-- Botón contacto móvil -->
-    <a href="#contacto" class="md:hidden bg-green-600 text-white font-heading text-type-20 px-3 py-1.5 rounded-[5px] no-underline leading-none">
-      Contacto
-    </a>
+    <!-- Botón hamburguesa mobile -->
+    <button id="menu-toggle"
+            class="md:hidden flex flex-col justify-center gap-[5px] w-10 h-10 -mr-2 cursor-pointer"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+      <span class="ham-line block w-6 h-[2px] bg-grey-800 rounded origin-center transition-all duration-300 ease-in-out"></span>
+      <span class="ham-line block w-6 h-[2px] bg-grey-800 rounded origin-center transition-all duration-300 ease-in-out"></span>
+      <span class="ham-line block w-6 h-[2px] bg-grey-800 rounded origin-center transition-all duration-300 ease-in-out"></span>
+    </button>
 
   </div>
 </header>
+
+<!-- Panel de menú mobile -->
+<div id="mobile-menu"
+     class="md:hidden fixed inset-x-0 top-[65px] z-40 bg-blue-50 border-b border-grey-100"
+     style="transform: translateY(-110%); transition: transform 0.28s ease-in-out; pointer-events: none;">
+  <nav class="max-w-[1000px] mx-auto px-4 py-3">
+    <ul class="flex flex-col list-none font-body text-type-16">
+      <li>
+        <a href="/#servicios" class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
+          ¿Qué hago?
+        </a>
+      </li>
+      <li>
+        <a href="/#proyectos" class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
+          Proyectos
+        </a>
+      </li>
+      <li>
+        <a href="/#explainers" class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
+          Explainers
+        </a>
+      </li>
+      <li>
+        <a href="/#investigaciones" class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
+          Investigaciones
+        </a>
+      </li>
+      <li>
+        <a href="/#sobre-mi" class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
+          Sobre mí
+        </a>
+      </li>
+      <li class="py-4">
+        <a href="/#contacto" class="mobile-nav-link inline-block bg-green-600 text-white font-heading text-type-20 leading-none px-4 py-2.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline">
+          Contáctame
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const lines = toggle?.querySelectorAll('.ham-line') as NodeListOf<HTMLElement>;
+  let isOpen = false;
+
+  function setMenu(open: boolean) {
+    isOpen = open;
+    if (!menu || !toggle) return;
+
+    menu.style.transform = open ? 'translateY(0)' : 'translateY(-110%)';
+    menu.style.pointerEvents = open ? 'auto' : 'none';
+    toggle.setAttribute('aria-expanded', String(open));
+
+    if (lines) {
+      if (open) {
+        lines[0].style.transform = 'translateY(7px) rotate(45deg)';
+        lines[1].style.opacity = '0';
+        lines[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+      } else {
+        lines[0].style.transform = '';
+        lines[1].style.opacity = '';
+        lines[2].style.transform = '';
+      }
+    }
+  }
+
+  toggle?.addEventListener('click', () => setMenu(!isOpen));
+
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => setMenu(false));
+  });
+</script>

@@ -59,6 +59,93 @@
   html { scroll-behavior: smooth; }
 }
 
+/* ── Prose: estilos para artículos de estudios de caso ── */
+@layer components {
+  .case-prose h2 {
+    font-family: "Jersey 10", serif;
+    font-size: var(--text-type-36);
+    color: var(--color-teal-900);
+    margin-top: 2.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.05;
+  }
+  .case-prose h3 {
+    font-family: "Jersey 10", serif;
+    font-size: var(--text-type-27);
+    color: var(--color-grey-800);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.15;
+  }
+  .case-prose p {
+    font-family: "Public Sans", system-ui, sans-serif;
+    font-size: var(--text-type-16);
+    color: var(--color-grey-500);
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+  }
+  .case-prose strong {
+    font-weight: 700;
+    color: var(--color-grey-800);
+  }
+  .case-prose em {
+    font-style: italic;
+  }
+  .case-prose a {
+    color: var(--color-green-600);
+    text-decoration: underline;
+  }
+  .case-prose a:hover {
+    color: var(--color-green-300);
+  }
+  .case-prose img {
+    border-radius: 5px;
+    border: 1px solid var(--color-grey-50);
+    width: 100%;
+    margin: 1.75rem 0;
+  }
+  .case-prose blockquote {
+    border-left: 3px solid var(--color-green-400);
+    background-color: var(--color-green-100);
+    padding: 0.875rem 1.25rem;
+    border-radius: 0 5px 5px 0;
+    margin: 1.75rem 0;
+  }
+  .case-prose blockquote p {
+    margin-bottom: 0;
+    color: var(--color-grey-800);
+  }
+  .case-prose ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .case-prose ol {
+    list-style: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .case-prose li {
+    font-family: "Public Sans", system-ui, sans-serif;
+    font-size: var(--text-type-16);
+    color: var(--color-grey-500);
+    line-height: 1.75;
+    margin-bottom: 0.3rem;
+  }
+  .case-prose hr {
+    border: none;
+    border-top: 1px solid var(--color-grey-50);
+    margin: 2.5rem 0;
+  }
+  .case-prose code {
+    font-size: 0.875em;
+    background-color: var(--color-grey-50);
+    color: var(--color-teal-900);
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+  }
+}
+
 /* ── Peso base de Public Sans ── */
 @layer base {
   body { font-weight: 300; }
