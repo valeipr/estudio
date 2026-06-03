@@ -2,62 +2,61 @@
 title: "Sistema de monitoreo Tukuy Pacha"
 description: "Diseñé una plataforma web para la Organización Tukuy Pacha que simplifica el seguimiento de donaciones y beneficiarios para niños y jóvenes con discapacidad en Cochabamba."
 category: "UI/UX Design"
-date: "2024-06-01"
+date: "2026-06-01"
 cover: "/thumbnail estudios de caso/4-monitoreo tukuy pacha.png"
 tags: ["UI/UX", "Web app", "Sector social", "Bolivia", "Figma"]
 readTime: 7
 overview:
   cliente: "Organización Tukuy Pacha"
-  herramientas: "Figma, Miro, FigJam"
-  año: "2024"
+  herramientas: "Figma, FigJam"
+  año: "2026"
   rol: "UX/UI Designer"
 ---
 
-## El contexto
+## ⚙️ El paso de hojas de cálculo dispersas a un sistema integrado
+Tukuy Pacha es una organización cochabambina que trabaja con niños y jóvenes con discapacidad. Tiene un programa que gestiona donaciones y apoyos que se destinan a programas de terapia, educación especial y acompañamiento familiar.
 
-Tukuy Pacha es una organización cochabambina que trabaja con niños y jóvenes con discapacidad física y cognitiva. Su modelo de financiamiento se basa en donaciones individuales y corporativas que se destinan a programas de terapia, educación especial y acompañamiento familiar.
+Con el tiempo, el número de beneficiarios y donantes fue creciendo y el sistema de seguimiento que funcionaba en hojas de cálculo y correos se volvió insostenible. El equipo perdía tiempo valioso buscando información básica: ¿quiénes son los beneficiarios?, ¿quiénes son los donantes?, ¿qué donante no ha sido contactado en meses?, ¿qué métricas generales tiene el proyecto?
 
-Con el tiempo, la organización fue creciendo y el sistema de seguimiento de donaciones —que funcionaba en hojas de cálculo y correos— se volvió insostenible. El equipo perdía tiempo valioso buscando información básica: ¿quién dona cuánto?, ¿cuántos beneficiarios atiende cada programa?, ¿qué donante no ha sido contactado en meses?
+La organización se puso en contacto con el equipo del [Lab TecnoSocial](https://labtecnosocial.org/), donde formo parte como diseñadora UX/UI, y nos pusimos en marcha para brindar una solución óptima.
 
-## El reto
+## 📌 ¿Qué tenía que resolver la plataforma?
 
-El desafío central era diseñar para un equipo con **poca experiencia en herramientas digitales** y con muy poco tiempo. Las personas que usarían la plataforma son coordinadoras de programas y voluntarias, no administradoras de sistemas. Si la interfaz era compleja, simplemente no la usarían.
+El desafío central era diseñar un sistema que simplifique las bases de datos que ellos tenían por separado en hojas de cálculo y condensarlas en una interfaz accesible y fácil de usar. Al mismo tiempo, la organización necesitaba visualizaciones del impacto, número de beneficiarios atendidos, porcentaje de metas cumplidas, entre otros. La plataforma tenía que servir tanto para el trabajo cotidiano como para la rendición de cuentas.
 
-Al mismo tiempo, la organización necesitaba reportes claros para presentar a donantes corporativos: visualizaciones del impacto, número de beneficiarios atendidos, porcentaje de metas cumplidas. La plataforma tenía que servir tanto para el trabajo cotidiano como para la rendición de cuentas.
+## 💻 El proceso
 
-## El proceso
+### Escuchando las necesidades de los usuarios
 
-### Investigación con usuarios
+A partir de grupos focales con el equipo de Tukuy Pacha, logramos identificar las principales necesidades y funciones que debía cumplir la plataforma.
 
-Realicé cinco entrevistas con miembros del equipo de Tukuy Pacha: la coordinadora general, dos coordinadoras de programas y dos voluntarias que manejaban la base de donantes. También revisé las hojas de cálculo actuales para entender qué datos ya rastreaban y cuáles les faltaban.
+- El equipo necesitaba una forma de añadir datos de nuevos donantes o beneficiarios y editarlos de manera rápida y sencilla.
+- Se necesitaba una plataforma que presente las bases de datos enlazadas, pero de una manera categorizada y accesible.
+- Tukuy Pacha requería que la plataforma les permita importar y exportar los datos de beneficiarios y donantes.
+- Los miembros de Tukuy Pacha requerían una sección con visualizaciones que permitan entender sus bases de datos y elaborar reportes rápidamente.
 
-Los hallazgos más importantes:
-- El equipo quería saber "de un vistazo" si iban bien o mal en relación a sus metas mensuales
-- El proceso de registrar una nueva donación tomaba demasiados pasos en el sistema anterior
-- Las coordinadoras necesitaban ver el historial de cada beneficiario de forma rápida
-- Los reportes para donantes se armaban manualmente cada trimestre, lo cual tomaba días
+### Estructura del producto
 
-### Arquitectura y flujos
+A partir del trabajo con el ingeniero informático que diseñó un modelo de datos, se acordó en realizar una plataforma compuesta por módulos. Mínimamente, se debía tener una sección de **Donantes** (gestión de personas y organizaciones que aportan), una de **Beneficiarios** (seguimiento de niños y jóvenes atendidos) y otra de **grupos familiares o trabajadores de apoyo** (aquellas personas destinadas a trabajar con los niños y jóvenes). Cada módulo tenía que ser independiente pero conectado.
 
-Definí tres módulos principales: **Donantes** (gestión de personas y organizaciones que aportan), **Beneficiarios** (seguimiento de niños y jóvenes atendidos) y **Reportes** (resúmenes automáticos para presentar a financiadores). Cada módulo tenía que ser independiente pero conectado.
+### Validación del prototipo
 
-Diseñé los flujos priorizando las tareas más frecuentes: registrar una nueva donación en menos de tres pasos, actualizar el estado de un beneficiario desde su ficha, y generar un reporte con un solo clic.
+Hicimos dos rondas de pruebas de usabilidad con los prototipos en Figma. En la primera ronda identifiqué problemas con la navegación entre módulos y con el formulario de registro de donaciones. En la segunda, validamos las correcciones y obtuve retroalimentación positiva de todos los usuarios y los miembros del equipo de desarrollo.
 
-### Prototipado y pruebas
-
-Hice dos rondas de pruebas de usabilidad con prototipos en Figma. En la primera ronda identifiqué problemas con la navegación entre módulos y con el formulario de registro de donaciones. En la segunda, validé las correcciones y obtuve retroalimentación positiva de todos los usuarios.
-
-> La coordinadora general dijo que era la primera vez que veía un sistema donde "todo tenía sentido desde el principio". Ese fue el mejor feedback que pude recibir.
+> A partir de las sesiones de validación y testing, se incorporaron pequeñas funciones nuevas al diseño, como la búsqueda de personas en la base de datos, filtros y la gestión de roles de usuario.
 
 ### Sistema de diseño
 
-Desarrollé un sistema de componentes en Figma adaptado a las necesidades de la organización: paleta de colores accesible, tipografía clara, componentes de formulario con validación visible, y una biblioteca de iconos consistente. Todo documentado para facilitar el desarrollo futuro.
+Desarrollé un sistema de componentes en Figma adaptado a las necesidades de la organización: paleta de colores accesible y coherente con la línea gráfica existente, tipografía clara, componentes de formulario con validación visible, y una biblioteca de iconos consistente. Todo fue documentado para facilitar el desarrollo futuro.
 
-## Los resultados
+## 🌱 Aprendizajes
 
-La plataforma fue entregada como prototipo de alta fidelidad listo para desarrollo. Las pruebas finales mostraron:
+Trabajar con Tukuy Pacha me permitió ver cómo decisiones de diseño aparentemente pequeñas pueden tener un impacto significativo en organizaciones que trabajan directamente con personas.
 
-- **Reducción del tiempo** de registro de donaciones de ~15 minutos a menos de 3 minutos
-- **Tasa de éxito del 100%** en tareas clave durante las pruebas de usabilidad finales
-- El módulo de reportes automáticos proyectaba ahorrar al equipo aproximadamente **2 días de trabajo manual** por trimestre
-- La organización inició la búsqueda de financiamiento para el desarrollo técnico basándose en el prototipo
+El desafío consistió en transformar información dispersa en una herramienta que ayudara al equipo a comprender mejor su trabajo, dar seguimiento a sus beneficiarios y comunicar el impacto de sus programas. Además, refuerza una constante que manejo en mi trabajo: cuando los datos están organizados y son accesibles, dejan de ser registros administrativos y se convierten en una herramienta para la toma de decisiones.
+
+Puedes ver un pequeño demo (sin datos reales) aquí 👇.
+
+<div style="max-width: 760px; margin: 0 auto; aspect-ratio: 16/9;">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mhv6Z1P619A?si=2OkdjO6u-Mie1nsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
