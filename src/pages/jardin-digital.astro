@@ -1,0 +1,65 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi jardín digital — Valeria Peredo</title>
+    <meta name="description" content="Esta página todavía está en construcción." />
+  </head>
+  <body class="bg-blue-50 font-body">
+    <div class="fixed inset-0 dot-pattern pointer-events-none z-0" aria-hidden="true"></div>
+
+    <div class="relative z-10 flex flex-col min-h-screen">
+      <Header />
+
+      <main class="flex-1 flex items-center justify-center px-4 py-16">
+        <div class="text-center">
+
+          <h1 class="font-heading text-type-64 md:text-[5rem] text-teal-900 leading-tight mb-4">
+            Lo siento...
+          </h1>
+
+          <img
+            src="/icons/en construccion.png"
+            alt="Ícono pixel art de cara triste"
+            class="w-28 h-28 object-contain mx-auto my-6"
+            style="image-rendering: pixelated"
+          />
+
+          <p class="font-heading text-type-36 text-green-600 leading-snug mb-5">
+            Esta página sigue en construcción.
+          </p>
+
+          <a
+            href="/"
+            class="inline-flex items-center gap-2 bg-green-600 text-white font-heading text-type-20 px-5 py-2.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline leading-none"
+          >
+            ← Volver al inicio
+          </a>
+
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in-view');
+            observer.unobserve(e.target);
+          }
+        }),
+        { threshold: 0.1, rootMargin: '0px 0px -48px 0px' }
+      );
+      document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+    </script>
+  </body>
+</html>

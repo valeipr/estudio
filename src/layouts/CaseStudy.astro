@@ -30,7 +30,7 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content="Astro" />
     <title>{title} — Valeria Peredo</title>
@@ -135,7 +135,7 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
 
     <!-- Artículo: card crema solo para el cuerpo del texto -->
     <main class="max-w-[1000px] mx-auto px-4 md:px-9 pb-16">
-      <div class="bg-cards-bg border border-grey-50 rounded-[5px] px-6 md:px-10 py-8 md:py-10">
+      <div class="bg-cards-bg border border-grey-50 rounded-[5px] px-6 md:px-10 pt-6 md:pt-7 pb-8 md:pb-10">
 
         <article class="case-prose">
           <slot />
@@ -159,6 +159,12 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
     <Footer />
     </div>
 
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Vista ampliada" aria-hidden="true">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">✕</button>
+      <img id="lightbox-img" src="" alt="" class="lightbox-img" />
+    </div>
+
     <script>
       const observer = new IntersectionObserver(
         (entries) => entries.forEach(e => {
@@ -170,6 +176,40 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
         { threshold: 0.1, rootMargin: '0px 0px -48px 0px' }
       );
       document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+      // Lightbox
+      const lightbox = document.getElementById('lightbox') as HTMLElement | null;
+      const lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement | null;
+
+      function openLightbox(src: string, alt: string) {
+        if (!lightbox || !lightboxImg) return;
+        lightboxImg.src = src;
+        lightboxImg.alt = alt;
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        if (!lightbox || !lightboxImg) return;
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        setTimeout(() => { if (lightboxImg) lightboxImg.src = ''; }, 200);
+      }
+
+      document.querySelectorAll('.image-gallery a').forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const anchor = link as HTMLAnchorElement;
+          const img = anchor.querySelector('img');
+          openLightbox(anchor.href, img?.alt ?? '');
+        });
+      });
+
+      document.getElementById('lightbox-close')?.addEventListener('click', closeLightbox);
+      lightbox?.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
     </script>
   </body>
 </html>
