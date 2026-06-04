@@ -3,7 +3,7 @@ title: "Sistema de monitoreo Tukuy Pacha"
 description: "Diseñé una plataforma web para la Organización Tukuy Pacha que simplifica el seguimiento de donaciones y beneficiarios para niños y jóvenes con discapacidad en Cochabamba."
 category: "UI/UX Design"
 date: "2026-06-01"
-cover: "/thumbnail estudios de caso/4-monitoreo tukuy pacha.png"
+cover: "/thumbnails/4-monitoreo tukuy pacha.png"
 tags: ["UI/UX", "Web app", "Sector social", "Bolivia", "Figma"]
 readTime: 7
 overview:

@@ -3,7 +3,7 @@ title: "Bolivia, el país de la tierra envenenada"
 description: "Ilustré y diseñé para una investigación periodística de largo aliento sobre la contaminación minera en Bolivia. El trabajo ganó el Premio Nacional de Periodismo."
 category: "Diseño editorial"
 date: "2023-05-01"
-cover: "/thumbnail estudios de caso/3-bolivia el pais de la tierra envenenada.png"
+cover: "/thumbnails/3-bolivia el pais de la tierra envenenada.png"
 tags: ["Diseño editorial", "Ilustración", "Periodismo de datos", "Bolivia", "Infografía"]
 readTime: 5
 overview:

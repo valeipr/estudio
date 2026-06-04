@@ -3,7 +3,7 @@ title: "App Mi Huella"
 description: "Diseñé e ilustré esta aplicación móvil para el cambio de conductas ambientales en niños y adolescentes, combinando gamificación, ilustración y UX pensado para audiencias jóvenes."
 category: "UI/UX Design · Ilustración"
 date: "2024-09-01"
-cover: "/thumbnail estudios de caso/6-mi huella.png"
+cover: "/thumbnails/6-mi huella.png"
 tags: ["UI/UX", "Ilustración", "Educación ambiental", "App móvil", "Figma"]
 readTime: 6
 overview:
@@ -13,52 +13,85 @@ overview:
   rol: "UX/UI Designer e ilustradora"
 ---
 
-## El contexto
+## 🌎 ¿Qué es Mi Huella?
 
-Las aplicaciones de educación ambiental para niños y adolescentes suelen cometer el mismo error: tratan el cambio climático con la misma gravedad y distancia que lo hacen los medios para adultos. El resultado es contenido que abruma, culpabiliza o aburre a su audiencia objetivo.
+Mi Huella App, nació como una calculadora de huella de carbono orientada a niños y jóvenes. Su propósito era ayudarles a comprender cómo sus hábitos cotidianos —como la alimentación, el consumo eléctrico o el transporte— impactan en el medio ambiente.
 
-Mi Huella nació con una premisa diferente: ¿qué pasaría si una app ambiental fuera tan entretenida como un juego, pero tan honesta como la mejor educación? El objetivo era motivar a niños de 8 a 15 años a adoptar hábitos sustentables a través de retos semanales, seguimiento de su "huella" personal y una narrativa visual coherente.
+El problema era que la experiencia del producto inicial se parecía mucho a un formulario. El usuario ingresaba datos, recibía un resultado y el recorrido terminaba ahí. Esto permitía calcular la huella de carbono, pero no ayudaba mucho a construir una relación sostenida con la aplicación ni convertir el resultado en un cambio de conducta.
 
-## El reto
+Revisando productos similares, encontré que muchas calculadoras de huella de carbono suelen tener las mismas características: no permiten almacenar información útil para el usuario y tampoco cuentan con una interfaz interactiva que motive su uso continuo. Por eso, me propuse rediseñar Mi Huella incorporando elementos más pedagógicos y algo de gamificación.
 
-Diseñar para niños y adolescentes implica resolver una tensión permanente: la experiencia tiene que ser suficientemente simple para que un niño de 8 años la entienda, pero suficientemente rica para que un adolescente de 15 no la encuentre infantil. Eso requiere capas: una interfaz clara en la superficie y profundidad para quienes quieran explorar.
+## Un diseño funcional... tal vez demasiado 🥴
 
-El otro reto fue el tono. La crisis climática es real y urgente, pero el miedo no es un motor de cambio sostenible para audiencias jóvenes. Había que ser honesto sobre el problema sin inducir ansiedad o parálisis.
+La primera versión de la app era usable, pero poco atractiva. Cumplía su función, pero no generaba suficiente enganche por su interfaz parecida a Google Forms, lo cual es fundamental cuando se trabaja con poblaciones jóvenes.
 
-## El proceso
+![Pantallas antes del cambio](/mi%20huella/antes.png)
+*Diseño de la app inicial*
 
-### Investigación
+Durante el análisis de la experiencia inicial, encontré varios puntos críticos:
 
-Realicé grupos focales con niños de distintas edades y entrevistas con docentes de educación primaria y secundaria. Aprendí que:
-- Los niños de 8-10 años responden muy bien a la narrativa de "cuidar algo": personajes, plantas, animales virtuales
-- Los adolescentes de 12-15 prefieren ver su impacto en datos concretos y compararse con otros
-- Los docentes querían herramientas que complementaran el currículo sin requerir preparación extra
+- Los textos eran largos y podía sentirse complejos para un usuario joven.
+- La aplicación calculaba la huella, pero no guardaba mediciones pasadas.
+- Consecuentemente, el usuario no podía ver su progreso ni comparar sus resultados.
+- La relación entre el cálculo y los consejos no era suficientemente clara.
+- La interfaz se sentía demasiado cercana a un formulario tradicional.
+- La identidad visual necesitaba ser más amable, memorable y coherente con el público.
 
-Estos hallazgos definieron las dos grandes audiencias de la app y su sistema de progresión diferenciado.
+En otras palabras, la app respondía la pregunta “¿cuál es mi huella de carbono?”, pero todavía no  ayudaba al usuario a responder claramente “¿qué puedo hacer para mejorar?”
 
-### Sistema de ilustración
+## 📌 Mi ruta de trabajo
 
-Desarrollé un lenguaje visual propio para la app: personajes redondeados y expresivos, paleta con verdes, azules y tierras cálidas, y un mundo ilustrado que mezclaba entornos bolivianos reconocibles (el altiplano, los llanos, los mercados) con elementos fantásticos.
+El objetivo del rediseño fue implementar pequeños cambios para que el usuario no solamente calcule su huella, sino que pueda recordarla y reducirla, con la app como una herramienta. Para eso, me propuse tres líneas de trabajo:
 
-> Quería que los niños bolivianos vieran su propio paisaje en la app, no los bosques europeos o los parques estadounidenses que aparecen en la mayoría del material ambiental.
+1. Hacer la experiencia más útil: incorporar almacenamiento de registros y visualización del progreso.
+2. Hacer la experiencia más accionable: conectar los resultados del cálculo de huella de carbono con consejos personalizados para cambiar hábitos. Pensé en Fabulous como un ejemplo interesante a seguir.
+3. Hacer la experiencia más atractiva: usar una interfaz más lúdica, colores vivos y un personaje que acompañara al usuario.
 
-Ilustré más de 40 elementos: personajes, escenarios, iconos, badges de logros y pantallas de celebración. Cada ilustración fue probada con niños para validar que la expresividad y el tono fueran los correctos.
+![Wireframes digitales de las pantallas rediseñadas](/mi%20huella/flujo.png)
+*Nuevo flujo de usuario planteado*
 
-### UX y flujos
+## ✏️ Proceso
+### Wireframes y exploración de pantallas
 
-El flujo principal gira en torno a los **retos semanales**: acciones concretas y verificables (tomar ducha de menos de 5 minutos, no usar bolsa plástica en las compras, ir en bicicleta al colegio). Al completarlos, el usuario acumula "huellas verdes" que alimentan su jardín virtual y desbloquean contenido.
+En base a los lineamientos anteriores, dibujé wireframes (bosquejos) para ordenar las pantallas principales y probar cómo podía sentirse la experiencia antes de pasar al diseño en Figma.
 
-Diseñé el sistema de gamificación con cuidado para que no creara dependencia ni ansiedad por el progreso: no hay penalización por no completar un reto, solo celebración cuando sí se completa.
+![Wireframes digitales de las pantallas rediseñadas](/mi%20huella/wireframes.png)
+*Wireframes de baja fidelidad que sirvieron como base para el diseño final en Figma*
 
-### Prototipado y pruebas
 
-Hice tres rondas de pruebas con niños y adolescentes de distintos rangos de edad. En cada ronda ajusté textos (simplificar más para los menores, añadir datos para los mayores), microcopy de los retos y el flujo de onboarding. La tercera ronda mostró comprensión y entusiasmo en todos los rangos de edad.
+Aquí, una de las decisiones más importantes fue eliminar el estilo de interfaz de formulario. Es decir que, en lugar de presentar toda la información como una lista de campos, la experiencia se dividió en pasos más pequeños, con preguntas concretas y una navegación guiada.
 
-## Los resultados
+### Una interfaz más amable para un público joven
 
-La app fue presentada como proyecto final de diseño con una puntuación de evaluación sobresaliente. Los indicadores más destacados de las pruebas:
+La app inicial se sentía fría y muy funcional, lo cual no generaba ningún vínculo emocional con el usuario. Por tanto, se trabajó con una paleta más luminosa y una tipografía redondeada para que la interfaz se sintiera más amigable y memorable.
 
-- **100% de los niños de 8-10 años** completaron el onboarding sin ayuda en menos de 4 minutos
-- **NPS del prototipo**: +72 entre adolescentes de 12-15 años
-- Los docentes evaluadores destacaron la integración del contexto boliviano como diferenciador clave
-- El proyecto recibió interés de una organización medioambiental cochabambina para explorar una implementación piloto
+![Bocetos a mano de las pantallas principales de Mi Huella](/mi%20huella/bocetos.png)
+*Bocetos iniciales del personaje en Procreate*
+
+Pero, en mi opinión, la parte más importante -y divertida- del rediseño fue crear un personaje que acompaña al usuario por toda la app. En Affinity Designer, hice un pequeño planeta tierra antropomorfizado, basándome en el estilo del popular juego Dumb Ways To Die, que fue muy popular entre niños y jóvenes hace algunos años.
+
+![Pantallas del rediseño de Mi Huella mostrando la interfaz y el personaje](/mi%20huella/todos.png)
+*Diseños finales del personaje en todos sus estados emocionales*
+
+No quería que el personaje cumpliera una función meramente decorativa, sino que ayude a que los cálculos de huella de carbono y los consejos de la app generaran un vínculo emocional con el usuario. Así, por ejemplo, en la pantalla de resultados, el pequeño planeta podría estar feliz, tranquilo o preocupado, dependiendo del tamaño de la huella de carbono del usuario.
+
+### Consejos y registro de mediciones
+
+Otro cambio importante fue la incorporación de consejos prácticos para reducir la huella de carbono. Estos consejos se organizaron según las categorías consideradas en la calculadora, como consumo eléctrico, alimentación y transporte. De esa manera, el usuario no se quedaba solamente con el cálculo y podía recibir consejos y pasos accionables para mejorar sus hábitos ambientales.
+
+![Pantallas del rediseño final](/mi%20huella/pantallas.png)
+*Pantallas finales de la app con el rediseño*
+
+También incorporé la sección de “mis mediciones”, que permitió resolver una de las principales limitaciones de la experiencia inicial: la falta de memoria.
+
+## 💭 Aprendizajes
+
+Este proyecto me permitió trabajar en un reto que combinaba diseño UX, diseño visual y comunicación pedagógica.
+
+Uno de los principales aprendizajes fue que una aplicación puede ser clara y funcional, pero si no conecta con las motivaciones del usuario ni cuenta con una identidad visual ni un lenguaje emocional, difícilmente su uso se convertirá en un hábito.
+
+Puedes jugar con un pequeño demo del rediseño planteado aquí abajo 👇:
+
+<div style="max-width: 390px; width: 100%; margin: 0 auto; aspect-ratio: 1/2;">
+  <iframe style="width: 100%; height: 100%; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 5px;" src="https://embed.figma.com/proto/LSqU49HYOwT2iMSmcSZLrn/PF_Peredo_Valeria?node-id=46-27&viewport=230%2C287%2C0.51&scaling=scale-down&content-scaling=fixed&starting-point-node-id=46%3A27&page-id=46%3A26&embed-host=share" allowfullscreen></iframe>
+</div>

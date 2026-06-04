@@ -3,7 +3,7 @@ title: Las desigualdades educativas que ocultan los medalleros de las Olimpiadas
 description: Construí, analicé y visualicé una base de datos propia de los medalleros de las Olimpiadas Científicas Plurinacionales de Bolivia. Encontré patrones de desigualdades educativas que hasta el momento no se habían sistematizado de manera pública. El análisis alcanzó a miles de personas y abrió una conversación nacional sobre la calidad educativa en el país.
 category: Periodismo de datos
 date: "2023-04-01"
-cover: /thumbnail estudios de caso/2-olimpiadas cientificas.png
+cover: "/thumbnails/2-olimpiadas cientificas.png"
 tags:
   - Análisis de datos
   - Visualización

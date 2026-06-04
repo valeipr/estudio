@@ -3,7 +3,7 @@ title: "Tarpuy"
 description: "Diseñé la experiencia UX/UI de una aplicación de comercio justo que conecta directamente a productores cochabambinos con compradores, eliminando intermediarios y mejorando los ingresos del campo."
 category: "UI/UX Design"
 date: "2024-03-01"
-cover: "/thumbnail estudios de caso/1-tarpuy.png"
+cover: "/thumbnails/1-tarpuy.png"
 tags: ["UI/UX", "Mobile", "Comercio justo", "Bolivia", "Figma"]
 readTime: 6
 overview:
