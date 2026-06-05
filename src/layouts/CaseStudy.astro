@@ -21,7 +21,7 @@ interface Props {
 }
 
 const { title, description, category, date, cover, tags, readTime = 5, overview } = Astro.props;
-const b = import.meta.env.BASE_URL.slice(0, -1);
+const b = import.meta.env.BASE_URL.replace(/\/$/, "");
 const coverUrl = `${b}${cover}`;
 
 const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {

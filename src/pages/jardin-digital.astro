@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BaseDynamicStyles from '../components/BaseDynamicStyles.astro';
 
-const b = import.meta.env.BASE_URL.slice(0, -1);
+const b = import.meta.env.BASE_URL.replace(/\/$/, "");
 const previewUrl = `${Astro.url.origin}${b}/thumbnails/preview.png`;
 ---
 

@@ -1,5 +1,5 @@
 ---
-const b = import.meta.env.BASE_URL.slice(0, -1);
+const b = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 <section class="relative bg-blue-50 overflow-hidden flex items-start md:items-center justify-center py-4 md:py-8
                 min-h-[calc(100dvh-65px)]">

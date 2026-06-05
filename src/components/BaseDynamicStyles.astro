@@ -1,5 +1,5 @@
 ---
-const b = import.meta.env.BASE_URL.slice(0, -1); // '/estudio' in prod, '' in dev
+const b = import.meta.env.BASE_URL.replace(/\/$/, ""); // '/estudio' in prod, '' in dev
 ---
 <script is:inline define:vars={{ b }}>
 (function () {

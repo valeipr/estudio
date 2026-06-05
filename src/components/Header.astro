@@ -1,5 +1,5 @@
 ---
-const b = import.meta.env.BASE_URL.slice(0, -1);
+const b = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 <header class="sticky top-0 z-50 bg-blue-50 border-b border-grey-100">
   <div class="flex items-center justify-between h-[65px] max-w-[1200px] mx-auto px-4 md:px-10">
