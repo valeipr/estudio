@@ -1,11 +1,12 @@
 ---
+const b = import.meta.env.BASE_URL.slice(0, -1);
 ---
 <header class="sticky top-0 z-50 bg-blue-50 border-b border-grey-100">
   <div class="flex items-center justify-between h-[65px] max-w-[1200px] mx-auto px-4 md:px-10">
 
     <!-- Logo -->
-    <a href="/" class="flex items-center gap-2 no-underline shrink-0">
-      <img src="/icons/computer.png" alt="" class="w-7 h-7 object-contain" aria-hidden="true" />
+    <a href={`${b}/`} class="flex items-center gap-2 no-underline shrink-0">
+      <img src={`${b}/icons/computer.png`} alt="" class="w-7 h-7 object-contain" aria-hidden="true" />
       <span class="font-heading text-type-27 text-teal-900 leading-none">
         Mi estudio digital
       </span>
@@ -14,13 +15,13 @@
     <!-- Nav desktop -->
     <nav class="hidden md:block">
       <ul class="flex items-center gap-4 lg:gap-7 list-none font-body text-type-16 text-grey-500">
-        <li><a href="/#servicios" class="hover:text-green-600 transition-colors">¿Qué hago?</a></li>
-        <li><a href="/#proyectos" class="hover:text-green-600 transition-colors">Proyectos</a></li>
-        <li><a href="/#explainers" class="hover:text-green-600 transition-colors">Explainers</a></li>
-        <li><a href="/#investigaciones" class="hover:text-green-600 transition-colors">Investigaciones</a></li>
-        <li><a href="/#sobre-mi" class="hover:text-green-600 transition-colors">Sobre mí</a></li>
+        <li><a href={`${b}/#servicios`} class="hover:text-green-600 transition-colors">¿Qué hago?</a></li>
+        <li><a href={`${b}/#proyectos`} class="hover:text-green-600 transition-colors">Proyectos</a></li>
+        <li><a href={`${b}/#explainers`} class="hover:text-green-600 transition-colors">Explainers</a></li>
+        <li><a href={`${b}/#investigaciones`} class="hover:text-green-600 transition-colors">Investigaciones</a></li>
+        <li><a href={`${b}/#sobre-mi`} class="hover:text-green-600 transition-colors">Sobre mí</a></li>
         <li>
-          <a href="/#contacto" class="bg-green-600 text-white font-heading text-type-20 px-3 py-1.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline leading-none">
+          <a href={`${b}/#contacto`} class="bg-green-600 text-white font-heading text-type-20 px-3 py-1.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline leading-none">
             Contáctame
           </a>
         </li>
@@ -47,32 +48,32 @@
   <nav class="max-w-[1000px] mx-auto px-4 py-3">
     <ul class="flex flex-col list-none font-body text-type-16">
       <li>
-        <a href="/#servicios" class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
+        <a href={`${b}/#servicios`} class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
           ¿Qué hago?
         </a>
       </li>
       <li>
-        <a href="/#proyectos" class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
+        <a href={`${b}/#proyectos`} class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
           Proyectos
         </a>
       </li>
       <li>
-        <a href="/#explainers" class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
+        <a href={`${b}/#explainers`} class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
           Explainers
         </a>
       </li>
       <li>
-        <a href="/#investigaciones" class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
+        <a href={`${b}/#investigaciones`} class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
           Investigaciones
         </a>
       </li>
       <li>
-        <a href="/#sobre-mi" class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
+        <a href={`${b}/#sobre-mi`} class="mobile-nav-link block py-3.5 border-b border-grey-50 text-grey-500 hover:text-green-600 transition-colors no-underline">
           Sobre mí
         </a>
       </li>
       <li class="py-4">
-        <a href="/#contacto" class="mobile-nav-link inline-block bg-green-600 text-white font-heading text-type-20 leading-none px-4 py-2.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline">
+        <a href={`${b}/#contacto`} class="mobile-nav-link inline-block bg-green-600 text-white font-heading text-type-20 leading-none px-4 py-2.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline">
           Contáctame
         </a>
       </li>

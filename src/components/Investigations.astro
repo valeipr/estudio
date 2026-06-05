@@ -31,7 +31,7 @@ const papers = [
 
     <!-- Encabezado -->
     <div data-animate class="flex items-center justify-center gap-4 py-8 md:py-10">
-      <img src="/icons/investigacion-file.png" alt="" aria-hidden="true"
+      <img src={`${import.meta.env.BASE_URL.slice(0,-1)}/icons/investigacion-file.png`} alt="" aria-hidden="true"
         class="w-8 h-8 md:w-12 md:h-12 object-contain shrink-0" />
       <h2 class="font-heading text-type-36 md:text-type-48 text-grey-800 leading-[0.8]">
         Investigación académica

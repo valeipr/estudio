@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import BaseDynamicStyles from '../components/BaseDynamicStyles.astro';
 
 interface Props {
   title: string;
@@ -20,6 +21,8 @@ interface Props {
 }
 
 const { title, description, category, date, cover, tags, readTime = 5, overview } = Astro.props;
+const b = import.meta.env.BASE_URL.slice(0, -1);
+const coverUrl = `${b}${cover}`;
 
 const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
   year: 'numeric',
@@ -30,7 +33,7 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href={`${b}/favicon.png`} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content="Astro" />
     <title>{title} — Valeria Peredo</title>
@@ -38,9 +41,10 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
     <meta property="og:title" content={`${title} — Valeria Peredo`} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content={`${Astro.url.origin}${cover}`} />
+    <meta property="og:image" content={`${Astro.url.origin}${coverUrl}`} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content={`${Astro.url.origin}${cover}`} />
+    <meta name="twitter:image" content={`${Astro.url.origin}${coverUrl}`} />
+    <BaseDynamicStyles />
   </head>
   <body class="bg-blue-50 font-body">
     <!-- Dot pattern global fijo (mismo que en la home) -->
@@ -54,7 +58,7 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
       <div class="max-w-[1000px] mx-auto px-4 md:px-9">
 
         <!-- Volver -->
-        <a href="/#proyectos"
+        <a href={`${b}/#proyectos`}
            class="inline-flex items-center gap-2 font-body text-type-16 text-grey-500 hover:text-green-600 transition-colors no-underline mb-6 group">
           <span class="inline-block transition-transform group-hover:-translate-x-1">←</span>
           <span>Volver a proyectos</span>
@@ -91,7 +95,7 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
     <div class="max-w-[1000px] mx-auto px-4 md:px-9 mb-8">
       <div class="rounded-[5px] border border-grey-50 overflow-hidden h-[240px] sm:h-[360px] md:h-[460px]">
         <img
-          src={cover}
+          src={coverUrl}
           alt={`Portada del proyecto ${title}`}
           class="w-full h-full object-cover"
         />
@@ -149,11 +153,11 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
 
         <!-- Divisor + CTA final -->
         <div class="mt-14 pt-8 border-t border-grey-50 flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
-          <a href="/#proyectos"
+          <a href={`${b}/#proyectos`}
              class="inline-flex items-center gap-2 bg-green-600 text-white font-heading text-type-20 px-5 py-2.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline leading-none">
             ← Ver más proyectos
           </a>
-          <a href="/#contacto"
+          <a href={`${b}/#contacto`}
              class="inline-flex items-center gap-2 border border-green-600 text-green-600 font-heading text-type-20 px-5 py-2.5 rounded-[5px] hover:bg-green-100 transition-colors no-underline leading-none">
             ¿Trabajamos juntos?
           </a>
