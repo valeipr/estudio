@@ -82,7 +82,7 @@ Además del diseño UX/UI, trabajé la identidad visual del producto y una líne
 Las palabras clave del proyecto fueron frescura, verde, agroecológico y local. A partir de eso, propuse una paleta basada en verdes vivos. La tipografía combinó Roboto Condensed para títulos o textos de mayor presencia y Quicksand para un tono más amable y redondeado. Puedes ver un resumen del manual de marca en el PDF adjunto aquí abajo 👇.
 
 <div style="width: 100%; aspect-ratio: 3/4;">
-  <iframe src="/tarpuy/marca.pdf" width="100%" height="100%" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 5px;"></iframe>
+  <iframe src="/estudio/tarpuy/marca.pdf" width="100%" height="100%" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 5px;"></iframe>
 </div>
 
 ## Aprendizajes

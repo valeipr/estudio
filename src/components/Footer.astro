@@ -1,5 +1,6 @@
 ---
 import { Phone, Mail, MapPinned } from 'lucide-astro';
+const b = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <footer id="contacto" class="bg-cards-bg border-t border-grey-100">
@@ -12,7 +13,7 @@ import { Phone, Mail, MapPinned } from 'lucide-astro';
       <div data-animate
            class="bg-white border border-grey-50 rounded-xl flex flex-col items-center justify-center gap-3 p-5 md:p-4 flex-1">
         <div class="flex items-center justify-center gap-3 md:gap-4 w-full">
-          <img src={`${import.meta.env.BASE_URL.slice(0,-1)}/icons/mail.png`} alt="" aria-hidden="true"
+          <img src={`${b}/icons/mail.png`} alt="" aria-hidden="true"
             class="w-[28px] h-[24px] md:w-[35px] md:h-[29px] object-contain shrink-0" />
           <h3 class="font-heading text-type-20 md:text-type-27 text-grey-800 text-center leading-none">
             ¿Quieres que trabajemos juntos?
@@ -61,10 +62,10 @@ import { Phone, Mail, MapPinned } from 'lucide-astro';
     <!-- Redes -->
     <nav aria-label="Redes sociales">
       <ul class="flex flex-wrap items-center justify-center gap-5 md:gap-7 list-none font-heading text-type-20 md:text-type-27 text-grey-500">
-        <li><a href="#" class="hover:text-green-600 transition-colors no-underline">YouTube</a></li>
-        <li><a href="#" class="hover:text-green-600 transition-colors no-underline">TikTok</a></li>
-        <li><a href="#" class="hover:text-green-600 transition-colors no-underline">Instagram</a></li>
-        <li><a href="#" class="hover:text-green-600 transition-colors no-underline">Facebook</a></li>
+        <li><a href="https://www.youtube.com/@valuka2017" target="_blank" rel="noopener" class="hover:text-green-600 transition-colors no-underline">YouTube</a></li>
+        <li><a href="https://www.tiktok.com/@valep2017" target="_blank" rel="noopener" class="hover:text-green-600 transition-colors no-underline">TikTok</a></li>
+        <li><a href="https://www.instagram.com/valuka2017/" target="_blank" rel="noopener" class="hover:text-green-600 transition-colors no-underline">Instagram</a></li>
+        <li><a href="https://www.facebook.com/valeriaivanna.peredorodriguez/" target="_blank" rel="noopener" class="hover:text-green-600 transition-colors no-underline">Facebook</a></li>
       </ul>
     </nav>
 

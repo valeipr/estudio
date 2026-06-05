@@ -60,8 +60,8 @@ Para construirla, tomé dos rutas. Por un lado, hice un moodboard con imágenes,
 Después de varias iteraciones, desarrollé una propuesta que convenció al equipo y que, desde mi punto de vista, cumplía el objetivo comunicativo: un político y un minero mostrando una ley, ambos con máscaras de gas. Se daba a entender esa complicidad silenciosa en la que que ambos actores eran conscientes del daño ambiental que producían a cientos de comunidades, pero aún así continuaban con sus conductas.
 
 <div style="display: flex; gap: 1rem;">
-  <img src="/tierra-envenenada/boceto1-portada.png" alt="Primer boceto de la ilustración de portada" style="width: 50%; object-fit: contain;" />
-  <img src="/tierra-envenenada/portada-ilustracion-abstracta.png" alt="Ilustración abstracta explorada durante el proceso" style="width: 50%; object-fit: contain;" />
+  <img src="/estudio/tierra-envenenada/boceto1-portada.png" alt="Primer boceto de la ilustración de portada" style="width: 50%; object-fit: contain;" />
+  <img src="/estudio/tierra-envenenada/portada-ilustracion-abstracta.png" alt="Ilustración abstracta explorada durante el proceso" style="width: 50%; object-fit: contain;" />
 </div>
 <p style="text-align: center; font-style: italic; margin-top: -0.5rem;">Primer concepto de la portada e ilustración en limpio</p>
 

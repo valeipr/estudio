@@ -23,15 +23,15 @@ El reto no era técnico en el sentido convencional, sino de **criterio estético
 Luego de varias horas renderizando, agregué texto y pequeños detalles de composición en Affinity Designer para poder compartirlo en las redes sociales del proyecto que dirijo, Ciudatos Lab. Puedes ver los resultados de este experimento aquí abajo 👇.
 
 <div class="image-gallery">
-  <a href="/mapas%203d/1.jpg"><img src="/mapas%203d/1.jpg" alt="Mapa 3D de densidad poblacional - departamento 1" /></a>
-  <a href="/mapas%203d/2.jpg"><img src="/mapas%203d/2.jpg" alt="Mapa 3D de densidad poblacional - departamento 2" /></a>
-  <a href="/mapas%203d/3.jpg"><img src="/mapas%203d/3.jpg" alt="Mapa 3D de densidad poblacional - departamento 3" /></a>
-  <a href="/mapas%203d/4.jpg"><img src="/mapas%203d/4.jpg" alt="Mapa 3D de densidad poblacional - departamento 4" /></a>
-  <a href="/mapas%203d/5.jpg"><img src="/mapas%203d/5.jpg" alt="Mapa 3D de densidad poblacional - departamento 5" /></a>
-  <a href="/mapas%203d/6.jpg"><img src="/mapas%203d/6.jpg" alt="Mapa 3D de densidad poblacional - departamento 6" /></a>
-  <a href="/mapas%203d/7.jpg"><img src="/mapas%203d/7.jpg" alt="Mapa 3D de densidad poblacional - departamento 7" /></a>
-  <a href="/mapas%203d/8.jpg"><img src="/mapas%203d/8.jpg" alt="Mapa 3D de densidad poblacional - departamento 8" /></a>
-  <a href="/mapas%203d/9.jpg"><img src="/mapas%203d/9.jpg" alt="Mapa 3D de densidad poblacional - departamento 9" /></a>
+  <a href="/estudio/mapas%203d/1.jpg"><img src="/estudio/mapas%203d/1.jpg" alt="Mapa 3D de densidad poblacional - departamento 1" /></a>
+  <a href="/estudio/mapas%203d/2.jpg"><img src="/estudio/mapas%203d/2.jpg" alt="Mapa 3D de densidad poblacional - departamento 2" /></a>
+  <a href="/estudio/mapas%203d/3.jpg"><img src="/estudio/mapas%203d/3.jpg" alt="Mapa 3D de densidad poblacional - departamento 3" /></a>
+  <a href="/estudio/mapas%203d/4.jpg"><img src="/estudio/mapas%203d/4.jpg" alt="Mapa 3D de densidad poblacional - departamento 4" /></a>
+  <a href="/estudio/mapas%203d/5.jpg"><img src="/estudio/mapas%203d/5.jpg" alt="Mapa 3D de densidad poblacional - departamento 5" /></a>
+  <a href="/estudio/mapas%203d/6.jpg"><img src="/estudio/mapas%203d/6.jpg" alt="Mapa 3D de densidad poblacional - departamento 6" /></a>
+  <a href="/estudio/mapas%203d/7.jpg"><img src="/estudio/mapas%203d/7.jpg" alt="Mapa 3D de densidad poblacional - departamento 7" /></a>
+  <a href="/estudio/mapas%203d/8.jpg"><img src="/estudio/mapas%203d/8.jpg" alt="Mapa 3D de densidad poblacional - departamento 8" /></a>
+  <a href="/estudio/mapas%203d/9.jpg"><img src="/estudio/mapas%203d/9.jpg" alt="Mapa 3D de densidad poblacional - departamento 9" /></a>
 </div>
 
 El proyecto me demostró que la visualización de datos hecha con cuidado puede volverse un objeto cultural y artístico. Datos bien visualizados pueden convertirse en algo que la gente quiere guardar, compartir y explicar a otros. Además, para mí, siempre es genial poder tratar cuestiones urbanas mediante los datos.

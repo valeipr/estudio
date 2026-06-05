@@ -7,14 +7,18 @@ const BASE = '/estudio';
 /** Rehype plugin: prefix absolute internal paths in markdown with the base */
 function rehypeBaseUrl() {
   return function (tree) {
+    function needsPrefix(path) {
+      return typeof path === 'string'
+        && path.startsWith('/')
+        && !path.startsWith('//')
+        && !path.startsWith(BASE + '/');
+    }
     function walk(node) {
       if (node.type === 'element') {
-        if (node.tagName === 'img' && node.properties?.src?.startsWith('/')) {
+        if ((node.tagName === 'img' || node.tagName === 'iframe') && needsPrefix(node.properties?.src)) {
           node.properties.src = BASE + node.properties.src;
         }
-        if (node.tagName === 'a' && typeof node.properties?.href === 'string'
-            && node.properties.href.startsWith('/')
-            && !node.properties.href.startsWith('//')) {
+        if (node.tagName === 'a' && needsPrefix(node.properties?.href)) {
           node.properties.href = BASE + node.properties.href;
         }
       }
