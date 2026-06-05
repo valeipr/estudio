@@ -1,6 +1,6 @@
 ---
 title: "App Mi Huella"
-description: "Diseñé e ilustré esta aplicación móvil para el cambio de conductas ambientales en niños y adolescentes, combinando gamificación, ilustración y UX pensado para audiencias jóvenes."
+description: "Rediseñé la experiencia de Mi Huella, una app de huella de carbono para jóvenes. Transformé una interfaz tipo formulario en una experiencia con gamificación, consejos accionables e ilustré un personaje que acompaña al usuario en cada pantalla."
 category: "UI/UX Design · Ilustración"
 date: "2024-09-01"
 cover: "/thumbnails/6-mi huella.png"

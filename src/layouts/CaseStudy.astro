@@ -35,6 +35,12 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
     <meta name="generator" content="Astro" />
     <title>{title} — Valeria Peredo</title>
     <meta name="description" content={description} />
+    <meta property="og:title" content={`${title} — Valeria Peredo`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content={`${Astro.url.origin}${cover}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={`${Astro.url.origin}${cover}`} />
   </head>
   <body class="bg-blue-50 font-body">
     <!-- Dot pattern global fijo (mismo que en la home) -->
@@ -177,6 +183,11 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
       );
       document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
 
+      document.querySelectorAll('article.case-prose img').forEach(el => {
+        el.setAttribute('data-animate', '');
+        observer.observe(el);
+      });
+
       // Lightbox
       const lightbox = document.getElementById('lightbox') as HTMLElement | null;
       const lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement | null;
@@ -205,6 +216,11 @@ const dateFormatted = new Date(date + 'T12:00:00').toLocaleDateString('es-ES', {
           const img = anchor.querySelector('img');
           openLightbox(anchor.href, img?.alt ?? '');
         });
+      });
+
+      document.querySelectorAll('article.case-prose img').forEach(el => {
+        const img = el as HTMLImageElement;
+        img.addEventListener('click', () => openLightbox(img.src, img.alt ?? ''));
       });
 
       document.getElementById('lightbox-close')?.addEventListener('click', closeLightbox);

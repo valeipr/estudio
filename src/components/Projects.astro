@@ -4,37 +4,31 @@ const projects = [
     slug: 'tarpuy',
     image: '/thumbnails/1-tarpuy.png',
     title: 'Tarpuy, una app para productores cochabambinos',
-    description: 'Me encargué del diseño UI/UX de una aplicación para el comercio de productos en beneficio de productores agrícolas.',
+    description: 'Diseñé la app móvil para compradores y la web app para productores, validando la interfaz en talleres participativos con las propias organizaciones cochabambinas.',
   },
   {
     slug: 'olimpiadas-cientificas',
     image: '/thumbnails/2-olimpiadas cientificas.png',
     title: 'Desigualdades educativas en las Olimpiadas Científicas',
-    description: 'Construí y analicé una base de datos de las Olimpiadas Científicas y encontré grandes desigualdades. Este artículo se hizo viral.',
+    description: 'Construí una base de datos propia y descubrí que el 60% de las medallas van a colegios privados. La investigación abrió una conversación pública nacional.',
   },
   {
     slug: 'bolivia-tierra-envenenada',
     image: '/thumbnails/3-bolivia el pais de la tierra envenenada.png',
     title: 'Bolivia, el país de la tierra envenenada',
-    description: 'Ilustré y diseñé para una investigación periodística sobre la contaminación minera, desarrollada por Acceso Investigativo y CONNECTAS. El artículo ganó el Premio Nacional de Periodismo.',
+    description: 'Creé la identidad visual y la ilustración de portada de una investigación sobre contaminación minera en Bolivia. Ganó el Premio Nacional de Periodismo Digital e Investigación 2024.',
   },
   {
     slug: 'mi-huella',
     image: '/thumbnails/6-mi huella.png',
     title: 'Diseño UX/UI de la app Mi Huella',
-    description: 'Diseñé e ilustré esta aplicación para el cambio de conductas ambientales para niños y adolescentes.',
+    description: 'Rediseñé la app de huella de carbono para jóvenes, transformando una interfaz tipo formulario en una experiencia con gamificación y un personaje ilustrado propio.',
   },
   {
     slug: 'mapas-3d',
     image: '/thumbnails/5-mapas 3d.png',
     title: 'Densidad poblacional en 3D',
-    description: 'Experimenté con el paquete Rayshader de R para elaborar mapas 3D de la densidad poblacional en los nueve departamentos de Boliva.',
-  },
-  {
-    slug: 'monitoreo-tukuy-pacha',
-    image: '/thumbnails/4-monitoreo tukuy pacha.png',
-    title: 'Plataforma Tukuy Pacha',
-    description: 'Me encargué del diseño UX/UI de una plataforma que ayuda a la Organización Tukuy Pacha a simplificar su sistema de donaciones para niños y jóvenes con discapacidad.',
+    description: 'Usé Rayshader en R para crear mapas 3D de densidad poblacional en los 9 departamentos de Bolivia, donde el reto fue estético —paleta, ángulo, iluminación— más que técnico.',
   },
 ];
 ---
@@ -59,7 +53,8 @@ const projects = [
         <a href={`/proyectos/${project.slug}`}
            data-animate style={`--anim-delay:${(i % 2) * 120}ms`}
            class="bg-cards-bg border border-grey-50 rounded-[5px] flex flex-col items-end justify-between gap-4 md:gap-6 px-5 md:px-7 py-6 md:py-8
-                  hover:-translate-y-2 hover:shadow-[0_12px_28px_rgba(0,0,0,0.1)] hover:border-green-300 cursor-pointer no-underline">
+                  hover:-translate-y-2 hover:shadow-[0_12px_28px_rgba(0,0,0,0.1)] hover:border-green-300 cursor-pointer no-underline
+                  [&:last-child]:md:col-span-2 [&:last-child]:md:w-[calc((100%-1.5rem)/2)] [&:last-child]:md:mx-auto">
           <div class="border border-grey-50 rounded-[5px] h-[200px] sm:h-[240px] md:h-[282px] overflow-hidden w-full shrink-0">
             <img src={project.image} alt={project.title} class="w-full h-full object-cover" />
           </div>

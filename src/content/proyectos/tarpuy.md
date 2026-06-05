@@ -1,8 +1,8 @@
 ---
 title: "Tarpuy"
-description: "Diseñé la experiencia UX/UI de una aplicación de comercio justo que conecta directamente a productores cochabambinos con compradores, eliminando intermediarios y mejorando los ingresos del campo."
+description: "Diseñé la UX/UI de Tarpuy, una app de comercio justo para productores agrícolas cochabambinos. El trabajo incluyó una app móvil para compradores, una web app para productores y talleres participativos de validación con las propias organizaciones."
 category: "UI/UX Design"
-date: "2024-03-01"
+date: "2025-07-01"
 cover: "/thumbnails/1-tarpuy.png"
 tags: ["UI/UX", "Mobile", "Comercio justo", "Bolivia", "Figma"]
 readTime: 6
@@ -13,48 +13,90 @@ overview:
   rol: "UX/UI Designer"
 ---
 
-## El contexto
+## ¿Qué es Tarpuy? 🌱 
 
-Los productores agrícolas del departamento de Cochabamba enfrentan una cadena de comercialización muy larga: entre el productor y el consumidor final pueden existir cuatro o cinco intermediarios, lo que reduce drásticamente los márgenes de ganancia de quienes más trabajo ponen en la cadena.
+Tarpuy significa sembrar en quechua. Y también es el nombre de una aplicación creada para conectar a productores agropecuarios de Cochabamba con consumidores locales, para reducir la dependencia de intermediarios y abrir un canal de venta digital más directo y accesible.
 
-Tarpuy —que significa "sembrar" en quechua— nació como propuesta para acortar esa cadena: una aplicación móvil donde los productores publican sus productos directamente y los compradores (familias, restaurantes, tiendas) pueden contactarlos sin pasar por ningún intermediario.
+El proyecto fue impulsado por Lab TecnoSocial en alianza con Solidar Suiza, la Alcaldía de Cochabamba y organizaciones productoras locales. Desde su origen, Tarpuy quiso ser una herramienta para fortalecer la comercialización de pequeños y medianos productores en el municipio, a través de la tecnología.
 
-## El reto
+Mi aporte a Tarpuy fue diseñar la experiencia de usuario, la app móvil para consumidores, la web app para productores y la línea gráfica que luego se utilizó en materiales de difusión digital y campañas de comunicación del proyecto. Pero no hay que olvidar que fue un proyecto muy complejo y grande, que involucró a un equipo multidisciplinario para poder salir a la luz: desarrolladores de software, coordinadores con organizaciones productoras, comunicadores, trabajadores sociales y psicólogos, junto con las organizaciones productoras y los aliados institucionales.
 
-El mayor desafío no era tecnológico, sino de **accesibilidad y confianza**. La mayoría de los productores tienen poca experiencia con aplicaciones digitales, y muchos los compradores desconfían de plataformas nuevas cuando se trata de alimentos. El producto tenía que:
+## ¿Cuál fue mi reto como diseñadora?
+En Cochabamba, muchos productores agrícolas y pecuarios comercializan sus productos a través de canales fragmentados: puestos de mercado, puntos de venta independientes, WhatsApp, ventas desde su casa o intermediarios. Cada uno de estos canales implicaba costos, coordinación manual y distintos niveles de dependencia.
 
-- Ser simple de usar para personas con poca experiencia digital
-- Transmitir confianza y frescura visual
-- Funcionar bien con conectividad limitada (zonas rurales de Cochabamba)
-- Ser bilingüe: castellano y quechua en los textos más importantes
+Así, mi reto fue diseñar un producto que ayudara a resolver dos necesidades al mismo tiempo: por un lado, que los consumidores pudieran encontrar productos frescos, locales y agroecológicos de manera sencilla; por otro, que los productores tuvieran una herramienta comprensible para administrar su oferta, recibir pedidos y registrar ventas sin depender de procesos manuales o intermediarios.
 
-## El proceso
+Para los consumidores, la app debía funcionar como un mercado digital sencillo. Tenían que poder explorar y reservar productos, revisar categorías, conocer a las organizaciones productoras y elegir entre distintas modalidades de entrega, ya sea en el puesto de venta del productor, en un punto de encuentro en la ciudad o envíos a domicilio.
 
-### Investigación inicial
+![App móvil para consumidores de Tarpuy](/tarpuy/comprador.PNG)
+*Algunos bosquejos de cómo ideé la app para compradores*
 
-Realicé 8 entrevistas en profundidad: 4 con productores del mercado La Pampa y 4 con compradores regulares de ferias de productores. Las principales hallazgos fueron:
+Para los productores, la web app tenía que permitirles administrar sus ventas de manera sencilla, puesto que muchos de ellos eran personas con habilidades tecnológicas aún en desarrollo. Esto implicaba diseñar una interfaz amigable y fácil de interpretar, especialmente para personas acostumbradas a formas de venta presenciales o a herramientas más simples como WhatsApp.
 
-- Los productores querían **publicar fotos** de sus productos desde el campo, pero muchos no tenían clara la diferencia entre datos móviles y WiFi
-- Los compradores valoraban conocer **de dónde venía el producto** más que el precio exacto
-- Ambos grupos preferían el **contacto por WhatsApp** sobre cualquier sistema de mensajería interno
+![Web app para productores de Tarpuy](/tarpuy/vendedor.PNG)
+*Wireframes de la app para productores*
 
-### Definición y arquitectura
+## ¿Cómo diseñé?
+El diseño consistió en dos productos digitales complementarios: una app móvil para los consumidores y una web app responsiva para los productores.
 
-Con esos insights definí dos flujos principales: el **flujo productor** (publicar, gestionar pedidos) y el **flujo comprador** (explorar, filtrar, contactar). El árbol de información quedó en 3 niveles máximos de profundidad para mantener la navegación simple.
+### La App móvil para consumidores
+Se decidió que la app móvil estuviera organizada en cuatro módulos o secciones principales, para satisfacer las necesidades de los compradores:
 
-### Diseño y prototipado
+- Un apartado de Productos, donde los usuarios podían explorar y reservar la oferta de alimentos disponibles por categorías.
+- Una sección que muestra a las organizaciones de productores.
+- Un lugar para gestionar y monitorear las reservas realizadas en la app.
+- Un perfil para gestionar su información personal en Tarpuy.
 
-Trabajé en Figma con un sistema de componentes reutilizables. Hice tres rondas de pruebas con prototipos de baja, media y alta fidelidad. En cada ronda recopilé feedback y ajusté.
+![Pantallas finales de Tarpuy](/tarpuy/pantallas%20finales.png)
+*Pantallas finales en la vista del consumidor*
 
-> Una de las decisiones más importantes fue reemplazar el carrito de compras tradicional por un botón directo "Contactar al productor" que abre WhatsApp. Los usuarios lo entendieron de inmediato sin instrucciones adicionales.
+### La Web App para productores
+Se decidió crear una web app para productores puesto que muchos de ellos contaban con celulares de baja gama, o bastante antiguos que no soportaban las últimas versiones de Android o iOS. El acceso a la plataforma, no obstante, podía lograrse mediante el navegador. 
 
-## Los resultados
+Así, la segunda plataforma estuvo compuesta por otros cuatro módulos:
 
-La aplicación fue bien recibida en las pruebas de usabilidad finales. Los indicadores más destacados:
+- **Mi puesto**, para agregar, editar y administrar productos disponibles.
+- **Pedidos**, donde los productores podían ver las reservas realizadas por consumidores y gestionar el proceso de entrega.
+- **Ventas**, con registros contables de ventas pasadas.
+- **Perfil**, para ajustar información del productor.
 
-- **Tasa de éxito en tareas clave**: 94% de los usuarios completaron la tarea de publicar un producto en menos de 3 minutos
-- **NPS del prototipo**: +67 entre usuarios productores
-- **Tiempo de aprendizaje**: la mayoría de usuarios entendieron la navegación básica en menos de 5 minutos sin instrucciones
-- La integración con WhatsApp redujo la fricción de contacto y fue el elemento más valorado en el feedback
+![Detalle de módulos en la web app para productores](/tarpuy/vendedor-vista.png)
+*Detalle de la vista de módulos en la web app*
 
-La propuesta fue presentada como proyecto final de diseño y sirvió de base para conversaciones con una organización de productores de Cochabamba sobre una posible implementación.
+## Validar con productores y ajustar la interfaz
+
+Uno de los momentos más importantes del proceso fueron los talleres participativos con productores. En estos espacios se revisaron componentes, flujos y formas de presentar la información para identificar qué elementos resultaban más comprensibles.
+
+> Una decisión clave surgida de este proceso fue reemplazar una tabla de productos en el módulo Mi puesto por tarjetas. Aunque una tabla podía parecer más eficiente desde una lógica administrativa, para muchos productores las tarjetas eran más fáciles de leer, reconocer y manipular. Cada producto se convertía en una unidad visual concreta, con imagen, nombre, precio y acciones disponibles.
+
+![Taller participativo con organizaciones productoras](/tarpuy/tallerparticipativo.jpg)
+*Sugerencias para la app móvil y web por parte de las organizaciones productoras*
+
+![Segunda sesión de validación con productores](/tarpuy/tallerparticipativo2.jpg)
+*El equipo de Tarpuy y yo (de espaldas) validando la app con los usuarios*
+
+## 🎨 Branding y sistema visual
+
+Además del diseño UX/UI, trabajé la identidad visual del producto y una línea gráfica que pudiera extenderse a redes sociales.
+
+Las palabras clave del proyecto fueron frescura, verde, agroecológico y local. A partir de eso, propuse una paleta basada en verdes vivos. La tipografía combinó Roboto Condensed para títulos o textos de mayor presencia y Quicksand para un tono más amable y redondeado. Puedes ver un resumen del manual de marca en el PDF adjunto aquí abajo 👇.
+
+<div style="width: 100%; aspect-ratio: 3/4;">
+  <iframe src="/tarpuy/marca.pdf" width="100%" height="100%" style="border: 1px solid rgba(0,0,0,0.1); border-radius: 5px;"></iframe>
+</div>
+
+## Aprendizajes
+
+Tarpuy fue un proyecto especialmente valioso para mí, porque me enseñó que diseñar tecnología para impacto social exige más que diseñar pantallas. Requiere escuchar, adaptar expectativas y entender que la adopción digital depende tanto de la interfaz como del acompañamiento, la capacitación y la confianza.
+
+También aprendí que el codiseño no es un gesto simbólico. Cuando se trabaja con poblaciones con distintos niveles de familiaridad tecnológica, escuchar a los usuarios puede cambiar decisiones aparentemente pequeñas —como elegir tarjetas en lugar de tablas— pero fundamentales para que una herramienta sea realmente utilizable.
+
+Aquí abajo te dejo un demo y el botón de descarga de la app.
+
+<div style="max-width: 390px; width: 100%; margin: 0 auto; aspect-ratio: 9/16;">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O2NypF5veiw" title="Demo Tarpuy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 5px;"></iframe>
+</div>
+
+<a href="https://play.google.com/store/apps/details?id=org.labtecnosocial.tarpuy_mobile&hl=es" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-600 text-white font-heading text-type-20 px-5 py-2.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline leading-none">
+  Descargar en Android →
+</a>

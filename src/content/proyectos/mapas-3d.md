@@ -1,6 +1,6 @@
 ---
 title: "Mapas de densidad poblacional en 3D"
-description: "Visualizaciones tridimensionales de la densidad poblacional en los 9 departamentos de Bolivia, construidas con el paquete Rayshader de R."
+description: "Un experimento personal con Rayshader en R: mapas tridimensionales de densidad poblacional para los 9 departamentos de Bolivia, donde el reto fue estético —paleta, ángulo, iluminación— más que técnico."
 category: "Visualización de datos"
 date: "2023-05-01"
 cover: "/thumbnails/5-mapas 3d.png"

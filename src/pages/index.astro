@@ -18,10 +18,13 @@ import Footer from '../components/Footer.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <title>Valeria Peredo — Mi estudio digital</title>
-    <meta
-      name="description"
-      content="Investigación, UX/UI y visualización de datos. Convierto la complejidad en claridad."
-    />
+    <meta name="description" content="Investigación, UX/UI y visualización de datos. Convierto la complejidad en claridad." />
+    <meta property="og:title" content="Valeria Peredo — Mi estudio digital" />
+    <meta property="og:description" content="Investigación, UX/UI y visualización de datos. Convierto la complejidad en claridad." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={`${Astro.url.origin}/thumbnails/preview.png`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={`${Astro.url.origin}/thumbnails/preview.png`} />
   </head>
   <body class="bg-blue-50 font-body">
     <Header />

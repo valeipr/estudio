@@ -11,6 +11,12 @@ import Footer from '../components/Footer.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mi jardín digital — Valeria Peredo</title>
     <meta name="description" content="Esta página todavía está en construcción." />
+    <meta property="og:title" content="Mi jardín digital — Valeria Peredo" />
+    <meta property="og:description" content="Esta página todavía está en construcción." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={`${Astro.url.origin}/thumbnails/preview.png`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={`${Astro.url.origin}/thumbnails/preview.png`} />
   </head>
   <body class="bg-blue-50 font-body">
     <div class="fixed inset-0 dot-pattern pointer-events-none z-0" aria-hidden="true"></div>

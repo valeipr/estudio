@@ -1,6 +1,6 @@
 ---
 title: Las desigualdades educativas que ocultan los medalleros de las Olimpiadas Científicas Plurinacionales
-description: Construí, analicé y visualicé una base de datos propia de los medalleros de las Olimpiadas Científicas Plurinacionales de Bolivia. Encontré patrones de desigualdades educativas que hasta el momento no se habían sistematizado de manera pública. El análisis alcanzó a miles de personas y abrió una conversación nacional sobre la calidad educativa en el país.
+description: "Construí una base de datos propia sobre los medalleros de las Olimpiadas Científicas Plurinacionales de Bolivia y descubrí que el 60% de las medallas van a colegios privados. La investigación abrió una conversación pública nacional y fue replicada por periodistas y creadores de contenido."
 category: Periodismo de datos
 date: "2023-04-01"
 cover: "/thumbnails/2-olimpiadas cientificas.png"
