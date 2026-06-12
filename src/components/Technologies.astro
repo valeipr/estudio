@@ -1,0 +1,95 @@
+---
+const b = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const di = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons';
+const t  = `${b}/tecnologias`;
+
+const technologies = [
+  { name: 'Figma',             icon: `${di}/figma/figma-original.svg` },
+  { name: 'Illustrator',       icon: `${di}/illustrator/illustrator-plain.svg` },
+  { name: 'Photoshop',         icon: `${di}/photoshop/photoshop-plain.svg` },
+  { name: 'Affinity Designer', icon: `${t}/affinity.png` },
+  { name: 'HTML',              icon: `${di}/html5/html5-original.svg` },
+  { name: 'CSS',               icon: `${di}/css3/css3-original.svg` },
+  { name: 'JavaScript',        icon: `${di}/javascript/javascript-original.svg` },
+  { name: 'React',             icon: `${di}/react/react-original.svg` },
+  { name: 'Tailwind',          icon: `${di}/tailwindcss/tailwindcss-original.svg` },
+  { name: 'Astro',             icon: `${di}/astro/astro-original.svg` },
+  { name: 'Python',            icon: `${di}/python/python-original.svg` },
+  { name: 'R',                 icon: `${di}/r/r-original.svg` },
+  { name: 'QGIS',              icon: `${t}/qgis.png` },
+  { name: 'Flourish',          icon: `${t}/flourish.png` },
+  { name: 'Datawrapper',       icon: `${t}/datawrapper.png` },
+  { name: 'Google Forms',      icon: `${t}/google-forms.png` },
+  { name: 'Claude Code',       icon: `${t}/claude-code.png` },
+  { name: 'Codex',             icon: `${t}/codex.png` },
+];
+
+const doubled = [...technologies, ...technologies];
+---
+
+<section id="tecnologias" class="relative bg-blue-50 overflow-hidden py-6 md:py-10">
+  <div class="absolute inset-0 dot-pattern pointer-events-none" aria-hidden="true"></div>
+
+  <div class="relative z-10 max-w-[1000px] mx-auto px-4 md:px-9">
+
+    <!-- Encabezado -->
+    <div data-animate class="flex items-center justify-center gap-3 md:gap-5 py-8 md:py-10">
+      <img src={`${b}/icons/computer.png`} alt="" aria-hidden="true"
+        class="w-8 h-8 md:w-[38px] md:h-[38px] object-contain shrink-0" />
+      <h2 class="font-heading text-type-27 md:text-type-48 text-grey-800 leading-[0.8]">
+        Mis tecnologías
+      </h2>
+    </div>
+
+    <!-- Carrusel infinito clipeado dentro del container con padding -->
+    <div class="tech-carousel overflow-hidden pb-8 md:pb-10" aria-label="Tecnologías que uso">
+      <div class="tech-track flex gap-4 w-max">
+        {doubled.map((tech, i) => (
+          <div aria-hidden={i >= technologies.length ? 'true' : undefined}
+               class="bg-cards-bg border border-green-300 rounded-xl flex flex-col items-center justify-center gap-3 px-4 py-5 w-[110px] shrink-0 select-none">
+            {tech.icon
+              ? <img src={tech.icon} alt={tech.name} class="tech-icon w-10 h-10 object-contain" loading="lazy" />
+              : <div class="w-10 h-10 rounded-full bg-green-100 border border-green-400 flex items-center justify-center text-teal-900 font-heading text-type-20 leading-none"
+                     aria-hidden="true">
+                  {tech.name.charAt(0)}
+                </div>
+            }
+            <span class="font-body text-type-12 text-grey-800 text-center leading-[1.2] font-medium">{tech.name}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .tech-track {
+    animation: tech-scroll 35s linear infinite;
+  }
+  .tech-carousel:hover .tech-track {
+    animation-play-state: paused;
+  }
+  @keyframes tech-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tech-track { animation: none; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLImageElement>('.tech-icon').forEach(img => {
+    img.addEventListener('error', () => {
+      const name = img.alt;
+      const badge = document.createElement('div');
+      badge.className = 'w-10 h-10 rounded-full bg-green-100 border border-green-400 flex items-center justify-center text-teal-900 font-heading leading-none';
+      badge.style.fontSize = '1.25rem';
+      badge.textContent = name.charAt(0);
+      badge.setAttribute('aria-hidden', 'true');
+      img.replaceWith(badge);
+    });
+  });
+</script>
