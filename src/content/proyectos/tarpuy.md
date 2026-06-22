@@ -47,7 +47,7 @@ Se decidió que la app móvil estuviera organizada en cuatro módulos o seccione
 - Un lugar para gestionar y monitorear las reservas realizadas en la app.
 - Un perfil para gestionar su información personal en Tarpuy.
 
-![Pantallas finales de Tarpuy](/tarpuy/pantallas%20finales.png)
+![Pantallas finales de Tarpuy](/tarpuy/mockups-tarpuy-mobile2.png)
 *Pantallas finales en la vista del consumidor*
 
 ### La Web App para productores
@@ -60,7 +60,7 @@ Así, la segunda plataforma estuvo compuesta por otros cuatro módulos:
 - **Ventas**, con registros contables de ventas pasadas.
 - **Perfil**, para ajustar información del productor.
 
-![Detalle de módulos en la web app para productores](/tarpuy/vendedor-vista.png)
+![Detalle del módulo de entrega de pedidos para productores](/tarpuy/mockup-web.png)
 *Detalle de la vista de módulos en la web app*
 
 ## Validar con productores y ajustar la interfaz
