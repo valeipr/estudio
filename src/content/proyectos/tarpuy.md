@@ -94,12 +94,22 @@ Tarpuy fue un proyecto especialmente valioso para mí, porque me enseñó que di
 
 También aprendí que el codiseño no es un gesto simbólico. Cuando se trabaja con poblaciones con distintos niveles de familiaridad tecnológica, escuchar a los usuarios puede cambiar decisiones aparentemente pequeñas —como elegir tarjetas en lugar de tablas— pero fundamentales para que una herramienta sea realmente utilizable.
 
-Aquí abajo te dejo un demo y el botón de descarga de la app.
+Aquí abajo te dejo dos demos y el botón de descarga de la app.
 
-<div style="max-width: 390px; width: 100%; margin: 0 auto; aspect-ratio: 9/16;">
-  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O2NypF5veiw" title="Demo Tarpuy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 5px;"></iframe>
+<p style="margin-top: 2rem; margin-bottom: 0.5rem; font-weight: 600;">Vista web — vendedor:</p>
+
+<div style="width: 100%; aspect-ratio: 16/9;">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZOa0ici9klg" title="Demo Tarpuy — Vista web vendedor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 5px;"></iframe>
 </div>
 
-<a href="https://play.google.com/store/apps/details?id=org.labtecnosocial.tarpuy_mobile&hl=es" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-600 text-white font-heading text-type-20 px-5 py-2.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline leading-none">
-  Descargar en Android →
-</a>
+<p style="margin-top: 2rem; margin-bottom: 0.5rem; font-weight: 600;">Vista móvil — comprador:</p>
+
+<div style="max-width: 390px; width: 100%; margin: 0 auto; aspect-ratio: 9/16;">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S3Tc2RdwjT0" title="Demo Tarpuy — Vista móvil comprador" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 5px;"></iframe>
+</div>
+
+<div style="display: flex; justify-content: center; margin-top: 2rem;">
+  <a href="https://play.google.com/store/apps/details?id=org.labtecnosocial.tarpuy_mobile&hl=es" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-600 text-white font-heading text-type-20 px-5 py-2.5 rounded-[5px] hover:bg-green-300 transition-colors no-underline leading-none">
+    Descargar en Android →
+  </a>
+</div>
